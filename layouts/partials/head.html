@@ -1,0 +1,66 @@
+{{ $gohugoio := "gohugoio" }}
+{{ $avatar := "/img/avatar.jpg" }}
+<!-- Site & Page Meta Data -->
+{{ if eq .Type "post" }}
+
+  <!-- Page Author & Description -->
+  <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
+  <meta name="description" content="{{ .Summary | plainify }}" />
+
+  <!-- Twitter Card -->
+  {{ if isset .Params "cover" }}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+    <meta name="twitter:image" content="{{ .Params.cover | absURL }}" />
+  {{ else }}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+    <meta name="twitter:image" content="{{ $avatar | absURL }}" />
+  {{ end }}
+
+{{ else }}
+
+  <!-- Site Author & Description -->
+  <meta name="author" content="{{ .Site.Params.author }}" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
+  <meta name="twitter:title" content="{{ if isset .Site.Params "seotitle" }}{{ .Site.Params.seotitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+  <meta name="twitter:image" content="{{ $avatar | absURL }}" />
+
+{{ end }}
+
+<!-- Site Generator -->
+<meta name="generator" content="Hugo {{ .Hugo.Version }}">
+
+<!-- Permalink & RSSlink -->
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternative" href="/index.xml" title="{{ .Site.Title }}" type="application/atom+xml">
+
+<!-- Rending Prefs -->
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no" />
+
+<!-- SEO Prefs -->
+<meta name="robots" content="index,follow" />
+<meta name="referrer" content="origin-when-cross-origin" />
+{{ if isset .Site.Params "googlesiteverification" }}<meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}" />{{ end }}
+{{ if isset .Site.Params "msvalidate" }}<meta name="msvalidate.01" content="{{ .Site.Params.msValidate }}" />{{ end }}
+
+<!-- Favicon and Touch icons -->
+<link rel="icon" href="/img/favicon.ico" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/avatar.jpg">
+
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+<style amp-custom>{{ partial "stylesheet" | safeCSS }}</style>

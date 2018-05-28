@@ -1,0 +1,100 @@
+/* Colors */
+$grey-dark: #3d404a;
+$grey: rgb(121, 121, 121);
+$grey-light: rgb(181, 181, 181);
+$grey-lighter: rgb(219, 219, 219);
+$white-ter: #f4f3f1;
+$white-bis: #fafafa;
+$white: #fff;
+$green: #6aac0e;
+$green-light: #7db500;
+
+$blue: #3f9adc;
+// $blue-light: #00a5ee;
+
+/* Theme colors */
+$primary: $green;
+$light: $white-ter;
+$pre-background: $grey-lighter;
+
+/* Layout */
+$main-background: #f5f5f5;
+$sidebar-background: rgba(121, 169, 54, 0.9);
+
+/* Text colors */
+$text: #777;
+$text-title: #2c2c2c;
+$text-invert: findcolorinvert($text);
+$text-light: $grey;
+$text-strong: $grey-dark;
+$text-content-title: $green-light;
+$text-link: $blue;
+
+/* Border colors */
+$border: $grey-lighter;
+$border-hover: $grey-light;
+$main-border: rgba(0, 0, 0, 0.09);
+$media-border: $white;
+
+/* Box shadow colors */
+$box-shadow: rgba(0, 0, 0, 0.04);
+$box-shadow-dark: rgba(0, 0, 0, 0.15);
+$box-shadow-darker: rgba(0, 0, 0, 0.3);
+
+/* Typography */
+$family-sans-serif: "Roboto",sans-serif;
+$family-monospace: "Roboto Mono",Menlo,Monaco,Consolas,"Courier New",monospace;
+$family-roboto: $family-sans-serif;
+$size-1: 3rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.5rem;
+$size-5: 1.25rem;
+$size-6: 1rem;
+$size-7: 0.8rem;
+$weight-light: 100;
+$weight-normal: 300;
+$weight-semibold: 400;
+$weight-bold: 600;
+
+/* Radius */
+$radius-small: 2px;
+$radius: 3px;
+$radius-large: 5px;
+
+/* Responsive break point */
+$phone: 640px;
+$tablet: 800px;
+$desktop: 960px;
+$widescreen: 1440px;
+
+/* Icons */
+$icon-menu: '\e802';
+$icon-close: '\e801';
+$icon-email: '\e804';
+$icon-rss: '\e803';
+$icon-github: '\f09b';
+$icon-dribbble: '\f31b';
+$icon-linkedin: '\f318';
+$icon-twitter: '\f309';
+$icon-facebook: '\f30c';
+$icon-instagram: '\f16d';
+$icon-youtube: '\f16a';
+$icon-google: '\f30f';
+$icon-clock: '\e800';
+
+$color-linkedin: #007bb6;
+$color-twitter: #55acee;
+$color-facebook: #3b5998;
+$color-instagram: #3f729b;
+$color-youtube: #bb0000;
+$color-google: #dd4b39;
+
+/* Animation */
+$easing: ease-out;
+$speed: 0.5s;
+
+/* Metrics */
+$space-small: 10px;
+$space-normal: 20px;
+$space-large: 30px;

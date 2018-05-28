@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Huy Nguyen"
+license = "MIT"
+licenselink = "https://github.com/huyb1991/hugo-lamp/blob/master/LICENSE.md"
+description = "A light responsive Hugo AMP theme for blogger."
+homepage = "https://github.com/huyb1991/hugo-lamp"
+tags = ["hugo", "amp", "blog", "theme", "responsive", "static-site-generator"]
+features = ["Blog"]
+min_version = "0.2"
+
+[author]
+  name = "Huy Nguyen"
+  homepage = "https://about.me/huyb1991"

@@ -1,0 +1,24 @@
+<!doctype html>
+<html ⚡ lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <!-- Page Title -->
+    <title>
+      {{- block "title" . -}}
+        {{ if eq .Kind "page" }}{{ .Title }}{{ else if isset .Site.Params "seotitle" }}{{ .Site.Params.seotitle }}{{ else }}{{ .Site.Title }}{{ end }}
+      {{- end -}}
+    </title>
+
+    <!-- Shared Head -->
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "sidebar.html" . }}
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>

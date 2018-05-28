@@ -1,0 +1,40 @@
+{
+  "name": "hugo-lamp",
+  "version": "1.0.2",
+  "description": "A light responsive Hugo AMP theme for blogger.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./index.js",
+    "watch": "./node_modules/.bin/nodemon -e scss -w ./ -x npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huyb1991/hugo-lamp.git"
+  },
+  "keywords": [
+    "hugo",
+    "amp",
+    "blog",
+    "theme",
+    "responsive",
+    "static-site-generator"
+  ],
+  "author": {
+    "name": "Huy Nguyen",
+    "email": "huyb.1991@gmail.com",
+    "url": "https://about.me/huyb1991"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huyb1991/hugo-lamp/issues"
+  },
+  "homepage": "https://github.com/huyb1991/hugo-lamp",
+  "devDependencies": {
+    "autoprefixer": "^8.5.1",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
+    "postcss": "^6.0.22"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,9 @@
+<amp-img
+  {{ with .Get "src" }}src="{{ . }}"{{ end }}
+  {{ with .Get "alt" }}alt="{{ range (split . " ") }}{{ . }} {{ end }}"{{ end }}
+  {{ with .Get "attribution" }}attribution="{{ range (split . " ") }}{{ . }} {{ end }}"{{ end }}
+  {{ with .Get "srcset" }}srcset="{{ range (split . " ") }}{{ . }} {{ end }}"{{ end }}
+  {{ with .Get "width" }}width="{{ . }}"{{ end }}
+  {{ with .Get "height" }}height="{{ . }}"{{ end }}
+  {{ with .Get "layout" }}layout="{{ . }}"{{ end }}>
+</amp-img>

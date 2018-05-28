@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'fe';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/fe.eot?17482317');
+  src: url('/fonts/fe.eot?17482317#iefix') format('embedded-opentype'),
+       url('/fonts/fe.woff2?17482317') format('woff2'),
+       url('/fonts/fe.woff?17482317') format('woff'),
+       url('/fonts/fe.ttf?17482317') format('truetype'),
+       url('/fonts/fe.svg?17482317#fe') format('svg');
+}
+
+.icon {
+  font-family: "fe";
+  font-style: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+// Font code
+.icon {
+  &-menu { &:before { content: $icon-menu; } }
+  &-email { &:before { content: $icon-email; } }
+  &-rss { &:before { content: $icon-rss; } }
+  &-github { &:before { content: $icon-github; } }
+  &-dribbble { &:before { content: $icon-dribbble; } }
+  &-linkedin { &:before { content: $icon-linkedin; } }
+  &-twitter { &:before { content: $icon-twitter; } }
+  &-facebook { &:before { content: $icon-facebook; } }
+  &-instagram { &:before { content: $icon-instagram; } }
+  &-youtube { &:before { content: $icon-youtube; } }
+  &-google { &:before { content: $icon-google; } }
+  &-clock { &:before { content: $icon-clock; } }
+}
+
+// Sharing on social networks
+.share {
+  font-family: "fe";
+  font-weight: normal;
+  margin-left: 0.2rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: $white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  &-twitter {
+    background-color: $color-twitter;
+    &:before { content: $icon-twitter; }
+  }
+
+  &-facebook {
+    background-color: $color-facebook;
+    &:before { content: $icon-facebook; }
+  }
+
+  &-google {
+    background-color: $color-google;
+    &:before { content: $icon-google; }
+  }
+}

@@ -1,0 +1,22 @@
+.not-found {
+  margin: 5rem auto 0;
+  font-family: $family-monospace;
+  text-align: center;
+}
+
+.error {
+  &-emoji {
+    color: $text-strong;
+    font-size: $size-1;
+  }
+
+  &-text {
+    font-size: $size-5;
+  }
+
+  &-link {
+    margin-top: 2rem;
+    font-size: $size-6;
+    color: $primary;
+  }
+}

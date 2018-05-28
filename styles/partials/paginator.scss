@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+
+  &-btn {
+    color: $text;
+    padding: $size-7;
+    background-color: $white;
+    border: 1px solid $border;
+    font-size: $size-7;
+    text-transform: uppercase;
+    border-radius: $radius-large;
+
+    &:focus,
+    &:hover {
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  // Handle casse Prev/Next button with flexbox
+  &-next {
+    margin-left: auto;
+  }
+}

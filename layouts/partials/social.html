@@ -1,0 +1,43 @@
+<ul class="social-list">
+  {{ if isset .Site.Params "email" }}
+  <li class="social-item">
+    <a href="mailto:{{ .Site.Params.email }}" title="Email"><span class="icon icon-email"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "github" }}
+  <li class="social-item">
+    <a href="//github.com/{{ .Site.Params.github }}" title="GitHub"><span class="icon icon-github"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "twitter" }}<li class="social-item">
+    <a href="//twitter.com/{{ .Site.Params.twitter }}" title="Twitter"><span class="icon icon-twitter"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "linkedin" }}<li class="social-item">
+    <a href="//www.linkedin.com/in/{{ .Site.Params.linkedin }}" title="Linkedin"><span class="icon icon-linkedin"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "facebook" }}<li class="social-item">
+    <a href="//www.facebook.com/{{ .Site.Params.facebook }}" title="Facebook"><span class="icon icon-facebook"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "google" }}<li class="social-item">
+    <a href="//plus.google.com/{{ .Site.Params.google }}" title="Google+"><span class="icon icon-google"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "instagram" }}<li class="social-item">
+    <a href="//www.instagram.com/{{ .Site.Params.instagram }}" title="Instagram"><span class="icon icon-instagram"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "youtube" }}<li class="social-item">
+    <a href="//www.youtube.com/user/{{ .Site.Params.youtube }}" title="YouTube"><span class="icon icon-youtube"></span></a>
+  </li>{{ end }}
+
+  {{ if isset .Site.Params "dribbble" }}<li class="social-item">
+    <a href="//dribbble.com/{{ .Site.Params.dribbble }}" title="Dribbble"><span class="icon icon-dribbble"></span></a>
+  </li>{{ end }}
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS"><span class="icon icon-rss"></span></a>
+  </li>
+</ul>

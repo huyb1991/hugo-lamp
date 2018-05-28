@@ -1,0 +1,72 @@
+// Style for list template
+.entry {
+  &-list {
+    background-color: $main-background;
+
+    @media screen and (max-width: $tablet) {
+      padding-top: $space-large;
+    }
+  }
+
+  &-single {
+    line-height: 1.8;
+    margin-bottom: 22px;
+    background-color: $white;
+    box-shadow: 0 0 2px 0 rgba(137, 146, 177, 0.15), 0px 3px 10px 0 rgba(137, 146, 177, 0.1);
+    border-radius: $radius-large;
+
+    &:hover {
+      box-shadow: 0px 1px 15px 0 rgba(137, 146, 177, 0.15), 0px 10px 20px 0 rgba(137, 146, 177, 0.15);
+    }
+  }
+
+  &-cover {
+    max-width: 100%;
+    border-radius: $radius-large $radius-large 0 0;
+    object-fit: cover;
+    box-shadow: none;
+  }
+
+  &-title {
+    margin: 0;
+    padding: $space-normal $space-large 0;
+  }
+
+  &-link {
+    font-size: $size-4;
+    font-weight: $weight-bold;
+    color: $text-title;
+  }
+
+  &-summary {
+    padding: 0 $space-large;
+    text-align: justify;
+    max-height: 4rem;
+    overflow: hidden;
+  }
+
+  &-footer {
+    margin: 0 $space-large;
+    padding: $space-small 0;
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-meta {
+    margin: 0;
+    font-size: $size-7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &-time {
+    color: #333;
+
+    &:after {
+      content: '';
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 0px 8px 0px 10px;
+    }
+  }
+}

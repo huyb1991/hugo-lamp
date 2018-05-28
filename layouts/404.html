@@ -1,0 +1,9 @@
+{{ define "title" }}Page not found{{ end }}
+
+{{ define "main" }}
+  <div class="not-found">
+    <h1 class="error-emoji">\(o_o)/</h1>
+    <p class="error-text">/* 404 page not found. */</p>
+    <p><a class="error-link" href="/" title="{{ .Title }}">↑ Back Home ↑</a></p>
+  </div>
+{{ end }}

@@ -1,0 +1,11 @@
+<amp-sidebar id="sidebar" class="sidebar" layout="nodisplay" side="right">
+  <ul class="sidebar-list">
+    <li class="sidebar-menu"><button class="sidebar-icon" on="tap:sidebar.close">X</button></li>
+    {{ $type := .Type }}
+    {{ $kind := .Kind }}
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li class="sidebar-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}"><a class="sidebar-link" href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+  </ul>
+</amp-sidebar>

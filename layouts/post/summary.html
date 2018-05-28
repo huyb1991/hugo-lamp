@@ -1,0 +1,25 @@
+<article class="entry-single">
+  {{ if isset .Params "cover" }}
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
+      <amp-img alt="{{ .Title }}"
+        height="244"
+        layout="fixed-height"
+        class="entry-cover"
+        src="{{ .Params.cover }}">
+      </amp-img>
+    </a>
+  {{ end }}
+  <header class="entry-header">
+    <h3 class="entry-title"><a href="{{ .Permalink }}" title="{{ .Title }}" class="entry-link">{{ .Title }}</a></h3>
+  </header>
+
+  <p class="entry-summary">{{ .Summary | plainify | htmlUnescape }}</p>
+  <footer class="entry-footer">
+    <p class="entry-meta"><span class="entry-time">{{ .Date.Format "Jan 2, 2006" }}</span> {{ .ReadingTime }} min read</p>
+    <div class="sharing">
+      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"></a>
+      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Twitter"></a>
+      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Google+"></a>
+    </div>
+  </footer>
+</article>
