@@ -2,7 +2,7 @@ baseURL = "your_domain"
 languageCode = "en-us"
 title = "Your site title"
 theme = "hugo-lamp"
-googleAnalytics = "UA-XXXXXXXX-X"                             # Google Analytics UA number
+googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
   subtitle = "Light responsive AMP theme"
@@ -11,9 +11,10 @@ googleAnalytics = "UA-XXXXXXXX-X"                             # Google Analytics
   description = "A light responsive Hugo AMP theme for blogger"
   paginate = 10
 
-  # Google Adsense
-  adsensePublisher = "ca-pub-XXX"
-  adsenseSlot = "XXX"
+  # Publisher
+  adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense
+  adsenseSlot = "XXX"                # Required slot to display ads
+  adsenseSlotSticky = "XXX"          # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
   # SEO configs
   seotitle = "Hugo Blog Title (SEO Version)"
