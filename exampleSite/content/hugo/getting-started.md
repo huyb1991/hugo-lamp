@@ -3,7 +3,7 @@ title: "Getting Started With Hugo"
 date: 2018-05-28T13:22:14+07:00
 draft: false
 type: "post"
-tags: ["hugo", "AMP", "theme"]
+tags: ["hugo", "theme"]
 ---
 
 ## Step 1: Install Hugo
