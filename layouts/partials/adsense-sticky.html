@@ -1,0 +1,10 @@
+{{ if and .Site.Params.adsensePublisher .Site.Params.adsenseSlotSticky }}
+  <amp-sticky-ad layout=nodisplay>
+    <amp-ad type=adsense
+      width=320
+      height=50
+      data-ad-client="{{ .Site.Params.adsensePublisher }}"
+      data-ad-slot="{{ .Site.Params.adsenseSlotSticky }}"
+    ></amp-ad>
+  </amp-sticky-ad>
+{{ end }}
