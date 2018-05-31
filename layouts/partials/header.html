@@ -1,9 +1,9 @@
 <header class="header">
-  <amp-img alt="Avatar"
+  <amp-img alt="{{ .Site.Title }}"
     width="128px"
     height="128px"
-    class="avatar"
-    src="{{ .Site.Params.avatar }}"
+    class="logo"
+    src="{{ .Site.Params.Logo }}"
     sizes="(max-width: 800px) 36px, 128px">
   </amp-img>
   {{  if eq .Kind "home" }}
