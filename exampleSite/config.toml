@@ -7,7 +7,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 [params]
   subtitle = "Light responsive AMP theme"
   author = "Huy Nguyen"
-  avatar = "/img/avatar.jpg"
+  logo = "/img/avatar.jpg"
   description = "A light responsive Hugo AMP theme for blogger"
   paginate = 10
 
