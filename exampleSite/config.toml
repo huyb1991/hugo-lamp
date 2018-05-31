@@ -1,20 +1,20 @@
-baseURL = "your_domain"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Your site title"
+title = "Hugo LAMP"
 theme = "hugo-lamp"
 googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
   subtitle = "Light responsive AMP theme"
-  author = "Your name"
+  author = "Huy Nguyen"
   avatar = "/img/avatar.jpg"
   description = "A light responsive Hugo AMP theme for blogger"
   paginate = 10
 
   # Publisher
-  adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense
-  adsenseSlot = "XXX"                # Required slot to display ads
-  adsenseSlotSticky = "XXX"          # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
+  ## adsensePublisher = "ca-pub-XXX"    # Required if you want to include Google Adsense
+  adsenseSlot = "XXX"                   # Required slot to display ads
+  adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 
   # SEO configs
   seotitle = "Hugo Blog Title (SEO Version)"
@@ -23,7 +23,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
   # Social networks
   email = "name@domain.com"
-  github = "github_username"
+  github = "huyb1991"
   twitter = "twitter_username"
   linkedin = "linkedin_username"
   facebook = "facebook_username"
