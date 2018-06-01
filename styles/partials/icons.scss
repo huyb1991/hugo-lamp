@@ -70,16 +70,16 @@
 
   &-twitter {
     background-color: $color-twitter;
-    &:before { content: $icon-twitter; }
+    &:before { @include variable-icon-font($icon-twitter); }
   }
 
   &-facebook {
     background-color: $color-facebook;
-    &:before { content: $icon-facebook; }
+    &:before { @include variable-icon-font($icon-facebook); }
   }
 
   &-google {
     background-color: $color-google;
-    &:before { content: $icon-google; }
+    &:before { @include variable-icon-font($icon-google); }
   }
 }
