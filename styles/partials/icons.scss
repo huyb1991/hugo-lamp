@@ -40,18 +40,18 @@
 
 // Font code
 .icon {
-  &-menu { &:before { content: $icon-menu; } }
-  &-email { &:before { content: $icon-email; } }
-  &-rss { &:before { content: $icon-rss; } }
-  &-github { &:before { content: $icon-github; } }
-  &-dribbble { &:before { content: $icon-dribbble; } }
-  &-linkedin { &:before { content: $icon-linkedin; } }
-  &-twitter { &:before { content: $icon-twitter; } }
-  &-facebook { &:before { content: $icon-facebook; } }
-  &-instagram { &:before { content: $icon-instagram; } }
-  &-youtube { &:before { content: $icon-youtube; } }
-  &-google { &:before { content: $icon-google; } }
-  &-clock { &:before { content: $icon-clock; } }
+  &-menu { &:before { @include variable-icon-font($icon-menu); } }
+  &-email { &:before { @include variable-icon-font($icon-email); } }
+  &-rss { &:before { @include variable-icon-font($icon-rss); } }
+  &-github { &:before { @include variable-icon-font($icon-github); } }
+  &-dribbble { &:before { @include variable-icon-font($icon-dribbble); } }
+  &-linkedin { &:before { @include variable-icon-font($icon-linkedin); } }
+  &-twitter { &:before { @include variable-icon-font($icon-twitter); } }
+  &-facebook { &:before { @include variable-icon-font($icon-facebook); } }
+  &-instagram { &:before { @include variable-icon-font($icon-instagram); } }
+  &-youtube { &:before { @include variable-icon-font($icon-youtube); } }
+  &-google { &:before { @include variable-icon-font($icon-google); } }
+  &-clock { &:before { @include variable-icon-font($icon-clock); } }
 }
 
 // Sharing on social networks

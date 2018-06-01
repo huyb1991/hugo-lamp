@@ -69,19 +69,24 @@ $desktop: 960px;
 $widescreen: 1440px;
 
 /* Icons */
-$icon-menu: '\e802';
-$icon-close: '\e801';
-$icon-email: '\e804';
-$icon-rss: '\e803';
-$icon-github: '\f09b';
-$icon-dribbble: '\f31b';
-$icon-linkedin: '\f318';
-$icon-twitter: '\f309';
-$icon-facebook: '\f30c';
-$icon-instagram: '\f16d';
-$icon-youtube: '\f16a';
-$icon-google: '\f30f';
-$icon-clock: '\e800';
+$icon-menu: 'e802';
+$icon-close: 'e801';
+$icon-email: 'e804';
+$icon-rss: 'e803';
+$icon-github: 'f09b';
+$icon-dribbble: 'f31b';
+$icon-linkedin: 'f318';
+$icon-twitter: 'f309';
+$icon-facebook: 'f30c';
+$icon-instagram: 'f16d';
+$icon-youtube: 'f16a';
+$icon-google: 'f30f';
+$icon-clock: 'e800';
+// Mixin for convert variable font
+// Read more at: https://github.com/sass/sass/issues/659#issuecomment-71759457
+@mixin variable-icon-font($icon-code) {
+  content: #{"\"\\"}#{$icon-code + "\""};
+}
 
 $color-linkedin: #007bb6;
 $color-twitter: #55acee;
