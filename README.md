@@ -24,17 +24,15 @@ Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/
 ### Site Info
 ```toml
 # Base config for your site
-baseURL = "your_domain"
+baseURL = "http://localhost:1313/"      # Your domain
 languageCode = "en-us"
-title = "Your site title"
+title = "Hugo LAMP"                     # Default site title
 theme = "hugo-lamp"
-googleAnalytics = "UA-XXXXXXXX-X"
+googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
 ```
 
 ### Main Menu
-
 ```toml
-# Sidebar menu
 [[menu.main]]
   name = "Hugo"
   weight = 1
@@ -53,6 +51,7 @@ googleAnalytics = "UA-XXXXXXXX-X"
 ```
 
 ### Taxonomies
+For more details, take a look on official document for [taxonomies](https://gohugo.io/content-management/taxonomies/)
 
 ```toml
 [taxonomies]
@@ -64,22 +63,25 @@ googleAnalytics = "UA-XXXXXXXX-X"
 ```toml
 [params]
   subtitle = "Light responsive AMP theme"
-  author = "Your name"
-  logo = "/img/avatar.jpg"              # Logo
-  description = "Site description"      # Meta description tag
+  author = "Huy Nguyen"                     # Your name
+  logo = "/img/avatar.jpg"                  # Logo
+  description = "A light responsive Hugo AMP theme for blogger"          # Meta description tag
   paginate = 10
 
   # SEO configs
-  seotitle = "Hugo Blog Title (SEO Version)"
+  seotitle = "Hugo Blog Title (SEO Version)"                  # Overwrite site title for SEO purpose
   googleSiteVerification = "google_site_verification_code"    # Google Webmaster
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 ```
 
 ### Publisher
+Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](https://www.ampproject.org/docs/reference/components/amp-auto-ads) for future.
+
 ```toml
   # Google Adsense
-  adsensePublisher = "ca-pub-XXX"
-  adsenseSlot = "XXX"
+  adsensePublisher = "ca-pub-XXX"       # Required if you want to include Google Adsense
+  adsenseSlot = "XXX"                   # Required slot to display ads
+  adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 ```
 
 ### Social networks & connections
