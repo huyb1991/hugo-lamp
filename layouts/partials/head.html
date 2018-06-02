@@ -2,23 +2,23 @@
 {{ $logo := "/img/avatar.jpg" }}
 <!-- Site & Page Meta Data -->
 {{ if eq .Type "post" }}
-
+  {{ $description := .Description | default .Summary }}
   <!-- Page Author & Description -->
   <meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}" />
-  <meta name="description" content="{{ .Summary | plainify }}" />
+  <meta name="description" content="{{ $description | plainify }}">
 
   <!-- Twitter Card -->
   {{ if isset .Params "cover" }}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+    <meta name="twitter:description" content="{{ $description | plainify }}" />
     <meta name="twitter:image" content="{{ .Params.cover | absURL }}" />
   {{ else }}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
-    <meta name="twitter:description" content="{{ .Summary | plainify }}" />
+    <meta name="twitter:description" content="{{ $description | plainify }}" />
     <meta name="twitter:image" content="{{ $logo | absURL }}" />
   {{ end }}
 
