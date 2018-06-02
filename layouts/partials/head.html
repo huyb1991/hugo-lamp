@@ -1,5 +1,5 @@
 {{ $gohugoio := "gohugoio" }}
-{{ $avatar := "/img/avatar.jpg" }}
+{{ $logo := "/img/avatar.jpg" }}
 <!-- Site & Page Meta Data -->
 {{ if eq .Type "post" }}
 
@@ -19,7 +19,7 @@
     <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
     <meta name="twitter:title" content="{{ .Title }}" />
     <meta name="twitter:description" content="{{ .Summary | plainify }}" />
-    <meta name="twitter:image" content="{{ $avatar | absURL }}" />
+    <meta name="twitter:image" content="{{ $logo | absURL }}" />
   {{ end }}
 
 {{ else }}
@@ -33,7 +33,7 @@
   <meta name="twitter:site" content="@{{ .Site.Params.twitter | default $gohugoio }}" />
   <meta name="twitter:title" content="{{ if isset .Site.Params "seotitle" }}{{ .Site.Params.seotitle }}{{ else }}{{ .Site.Title }}{{ end }}" />
   <meta name="twitter:description" content="{{ .Site.Params.description }}" />
-  <meta name="twitter:image" content="{{ $avatar | absURL }}" />
+  <meta name="twitter:image" content="{{ $logo | absURL }}" />
 
 {{ end }}
 
@@ -58,7 +58,7 @@
 <!-- Favicon and Touch icons -->
 <link rel="icon" href="/img/favicon.ico" />
 <meta name="apple-mobile-web-app-capable" content="yes">
-<link rel="apple-touch-icon" sizes="120x120" href="/img/avatar.jpg">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ $logo }}">
 
 <!-- Styles -->
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
