@@ -21,6 +21,7 @@ $ rm -rf hugo-lamp/.git
 
 Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/master/exampleSite) at `config.toml` and update by your own:
 
+### Site Info
 ```toml
 # Base config for your site
 baseURL = "your_domain"
@@ -28,38 +29,11 @@ languageCode = "en-us"
 title = "Your site title"
 theme = "hugo-lamp"
 googleAnalytics = "UA-XXXXXXXX-X"
+```
 
-[params]
-  subtitle = "Light responsive AMP theme"
-  author = "Your name"
-  avatar = "/img/avatar.jpg"            # Logo
-  description = "Site description"      # Meta description tag
-  paginate = 10
+### Main Menu
 
-  # Google Adsense
-  adsensePublisher = "ca-pub-XXX"
-  adsenseSlot = "XXX"
-
-  # SEO configs
-  seotitle = "Hugo Blog Title (SEO Version)"
-  googleSiteVerification = "google_site_verification_code"    # Google Webmaster
-  msValidate = "bing_site_verification_code"                  # Bing Webmaster
-
-  # Social networks
-  email = "name@domain.com"
-  github = "github_username"
-  twitter = "twitter_username"
-  linkedin = "linkedin_username"
-  facebook = "facebook_username"
-  google = "googleplus_id_number"
-  instagram = "instagram_username"
-  youtube = "youtube_username"
-  dribbble = "dribbble_username"
-
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-
+```toml
 # Sidebar menu
 [[menu.main]]
   name = "Hugo"
@@ -76,7 +50,50 @@ googleAnalytics = "UA-XXXXXXXX-X"
   weight = 3
   identifier = "tags"
   url = "/tags/"
+```
 
+### Taxonomies
+
+```toml
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+```
+
+### SEO
+```toml
+[params]
+  subtitle = "Light responsive AMP theme"
+  author = "Your name"
+  logo = "/img/avatar.jpg"              # Logo
+  description = "Site description"      # Meta description tag
+  paginate = 10
+
+  # SEO configs
+  seotitle = "Hugo Blog Title (SEO Version)"
+  googleSiteVerification = "google_site_verification_code"    # Google Webmaster
+  msValidate = "bing_site_verification_code"                  # Bing Webmaster
+```
+
+### Publisher
+```toml
+  # Google Adsense
+  adsensePublisher = "ca-pub-XXX"
+  adsenseSlot = "XXX"
+```
+
+### Social networks & connections
+```toml
+  # Social networks
+  email = "name@domain.com"
+  github = "github_username"
+  twitter = "twitter_username"
+  linkedin = "linkedin_username"
+  facebook = "facebook_username"
+  google = "googleplus_id_number"
+  instagram = "instagram_username"
+  youtube = "youtube_username"
+  dribbble = "dribbble_username"
 ```
 
 ## Contributing
