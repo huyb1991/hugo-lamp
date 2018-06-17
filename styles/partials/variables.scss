@@ -1,7 +1,6 @@
 /* Colors */
-$grey-darker: #333;
-$grey-dark: #3d404a;
-$grey: #797979;
+$grey: #777;
+$grey-dark: darken($grey, 20%);
 $grey-light: #b5b5b5;
 $grey-lighter: #dbdbdb;
 $white: #fff;
@@ -20,7 +19,7 @@ $main-background: #f5f5f5;
 $sidebar-background: rgba($primary, 0.9);
 
 /* Text colors */
-$text: #777;
+$text: $grey;
 $text-title: #2c2c2c;
 $text-invert: findcolorinvert($text);
 $text-light: $grey;
