@@ -33,13 +33,13 @@ $text-link: $blue;
 /* Border colors */
 $border: $grey-lighter;
 $border-hover: $grey-light;
-$main-border: rgba(0, 0, 0, 0.09);
+$main-border: rgba($black, 0.09);
 $media-border: $white;
 
 /* Box shadow colors */
-$box-shadow: rgba(0, 0, 0, 0.04);
-$box-shadow-dark: rgba(0, 0, 0, 0.15);
-$box-shadow-darker: rgba(0, 0, 0, 0.3);
+$box-shadow: rgba($black, 0.05);
+$box-shadow-dark: rgba($black, 0.15);
+$box-shadow-darker: rgba($black, 0.3);
 
 /* Typography */
 $family-sans-serif: "Roboto",sans-serif;
