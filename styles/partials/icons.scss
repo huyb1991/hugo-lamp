@@ -1,5 +1,7 @@
+$font-icon-name: 'fe';
+
 @font-face {
-  font-family: 'fe';
+  font-family: $font-icon-name;
   font-weight: normal;
   font-style: normal;
   src: url('/fonts/fe.eot?17482317');
@@ -11,7 +13,7 @@
 }
 
 .icon {
-  font-family: "fe";
+  font-family: $font-icon-name;
   font-style: normal;
   speak: none;
 
@@ -56,7 +58,7 @@
 
 // Sharing on social networks
 .share {
-  font-family: "fe";
+  font-family: $font-icon-name;
   font-weight: normal;
   margin-left: 0.2rem;
   display: inline-block;
