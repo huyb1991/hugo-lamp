@@ -4,8 +4,6 @@ $grey-dark: #3d404a;
 $grey: #797979;
 $grey-light: #b5b5b5;
 $grey-lighter: #dbdbdb;
-$white-ter: #f4f3f1;
-$white-bis: #fafafa;
 $white: #fff;
 $black: #000;
 $green: #6aac0e;
@@ -14,7 +12,7 @@ $blue: #3f9adc;
 
 /* Theme colors */
 $primary: $green;
-$light: $white-ter;
+$light: darken($white, 5%);
 $pre-background: $grey-lighter;
 
 /* Layout */
