@@ -14,12 +14,12 @@ $light: darken($white, 5%);
 $pre-background: $grey-light;
 
 /* Layout */
-$main-background: #f5f5f5;
+$main-background: darken($white, 5%);
 $sidebar-background: rgba($primary, 0.9);
 
 /* Text colors */
 $text: $grey;
-$text-title: #2c2c2c;
+$text-title: lighten($black, 15%);
 $text-invert: findcolorinvert($text);
 $text-light: $grey;
 $text-strong: $grey-dark;
