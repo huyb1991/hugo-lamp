@@ -4,12 +4,12 @@ $font-icon-name: 'fe';
   font-family: $font-icon-name;
   font-weight: normal;
   font-style: normal;
-  src: url('/fonts/fe.eot?17482317');
-  src: url('/fonts/fe.eot?17482317#iefix') format('embedded-opentype'),
-       url('/fonts/fe.woff2?17482317') format('woff2'),
-       url('/fonts/fe.woff?17482317') format('woff'),
-       url('/fonts/fe.ttf?17482317') format('truetype'),
-       url('/fonts/fe.svg?17482317#fe') format('svg');
+  src: url('/fonts/fe.eot');
+  src: url('/fonts/fe.eot#iefix') format('embedded-opentype'),
+       url('/fonts/fe.woff2') format('woff2'),
+       url('/fonts/fe.woff') format('woff'),
+       url('/fonts/fe.ttf') format('truetype'),
+       url('/fonts/fe.svg#fe') format('svg');
 }
 
 .icon {
