@@ -5,7 +5,7 @@ $grey-light: lighten($grey, 40%);
 $white: #fff;
 $black: #000;
 $green: #6aac0e;
-$green-light: lighten($green, 5%);
+$green-light: saturate($green, 10%);
 $blue: #3f9adc;
 
 /* Theme colors */
