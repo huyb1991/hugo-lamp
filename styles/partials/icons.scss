@@ -1,64 +1,18 @@
-$font-icon-name: 'fe';
-
-@font-face {
-  font-family: $font-icon-name;
-  font-weight: normal;
-  font-style: normal;
-  src: url('/fonts/fe.eot');
-  src: url('/fonts/fe.eot#iefix') format('embedded-opentype'),
-       url('/fonts/fe.woff2') format('woff2'),
-       url('/fonts/fe.woff') format('woff'),
-       url('/fonts/fe.ttf') format('truetype'),
-       url('/fonts/fe.svg#fe') format('svg');
-}
-
 .icon {
-  font-family: $font-icon-name;
   font-style: normal;
-  speak: none;
-
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
+  height: 1em;
   text-align: center;
 
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
-  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-}
-
-// Font code
-.icon {
-  &-menu { &:before { @include variable-icon-font($icon-menu); } }
-  &-email { &:before { @include variable-icon-font($icon-email); } }
-  &-rss { &:before { @include variable-icon-font($icon-rss); } }
-  &-github { &:before { @include variable-icon-font($icon-github); } }
-  &-dribbble { &:before { @include variable-icon-font($icon-dribbble); } }
-  &-linkedin { &:before { @include variable-icon-font($icon-linkedin); } }
-  &-twitter { &:before { @include variable-icon-font($icon-twitter); } }
-  &-facebook { &:before { @include variable-icon-font($icon-facebook); } }
-  &-instagram { &:before { @include variable-icon-font($icon-instagram); } }
-  &-youtube { &:before { @include variable-icon-font($icon-youtube); } }
-  &-google { &:before { @include variable-icon-font($icon-google); } }
-  &-clock { &:before { @include variable-icon-font($icon-clock); } }
 }
 
 // Sharing on social networks
 .share {
-  font-family: $font-icon-name;
   font-weight: normal;
   margin-left: 0.2rem;
   display: inline-block;
@@ -72,16 +26,13 @@ $font-icon-name: 'fe';
 
   &-twitter {
     background-color: $color-twitter;
-    &:before { @include variable-icon-font($icon-twitter); }
   }
 
   &-facebook {
     background-color: $color-facebook;
-    &:before { @include variable-icon-font($icon-facebook); }
   }
 
   &-google {
     background-color: $color-google;
-    &:before { @include variable-icon-font($icon-google); }
   }
 }

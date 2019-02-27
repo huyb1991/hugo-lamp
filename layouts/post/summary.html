@@ -17,9 +17,15 @@
   <footer class="entry-footer">
     <p class="entry-meta"><span class="entry-time">{{ .Date.Format "Jan 2, 2006" }}</span> {{ .ReadingTime }} min read</p>
     <div class="sharing">
-      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook"></a>
-      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Twitter"></a>
-      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Google+"></a>
+      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" title="Share on Facebook">
+        <svg class="icon icon-facebook" fill="currentColor"><use xlink:href="#icon-facebook" /></svg>
+      </a>
+      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Twitter">
+        <svg class="icon icon-twitter" fill="currentColor"><use xlink:href="#icon-twitter" /></svg>
+      </a>
+      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url={{ .Title }}&amp;url={{ .Permalink }}" title="Share on Google+">
+        <svg class="icon icon-google" fill="currentColor"><use xlink:href="#icon-googleplus" /></svg>
+      </a>
     </div>
   </footer>
 </article>
