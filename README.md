@@ -19,8 +19,6 @@ $ rm -rf hugo-lamp/.git
 
 ## Guides
 
-[Full document](/docs/guide.md)
-
 #### Content Editing
   - [Add image to article](/docs/guide.md#add-image-to-article-content)
   - [Content config for SEO](/docs/guide.md#content-config-for-seo)
