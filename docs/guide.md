@@ -1,6 +1,8 @@
 # Guides
 
-## Add image to article (content)
+## Content Editing
+
+#### Add image to article (content)
 
 This is an AMP page, to add image, you have to use [amp-img shortcodes](https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html), the syntax is:
 ```
@@ -8,25 +10,27 @@ This is an AMP page, to add image, you have to use [amp-img shortcodes](https://
 ```
 Replace `width-value`, `height-value`, `image alt` and `image-url` by your image.
 
-A note: Hugo is static-site-generator, to add image to your site, please follow this solution [[SOlved] How to… insert image in my post?](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473).
+Note: Hugo is static-site-generator, to add image to your site, please follow this solution [[SOlved] How to… insert image in my post?](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473)
 
-## Content config for SEO
+#### Content config for SEO
 
 In Front Matter section for each post, you should add `title` and `description` for SEO, example:
-```toml
+
+```
 ---
 title: "Getting Started with AMP"
 description: "Getting started with AMP. Implement these key steps to get up and running with AMP"
 ---
 ```
 The `title` is the H1 tag on HTML page, and `<title>` in head section.
+
 The `description` is the meta tag for description `<meta name="description" content="">` in head section.
 
-# Configuration
+## Configuration
 
 Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/master/exampleSite) at `config.toml` and update by your own:
 
-## Site Info
+#### Site Info
 
 ```toml
 # Base config for your site
@@ -37,7 +41,7 @@ theme = "hugo-lamp"
 googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
 ```
 
-## Main Menu
+#### Main Menu
 
 ```toml
 [[menu.main]]
@@ -57,7 +61,7 @@ googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
   url = "/tags/"
 ```
 
-## Taxonomies
+#### Taxonomies
 
 For more details, take a look on official document for [taxonomies](https://gohugo.io/content-management/taxonomies/)
 
@@ -67,7 +71,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
   category = "categories"
 ```
 
-## SEO
+#### SEO
 
 ```toml
 [params]
@@ -83,7 +87,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 ```
 
-## Publisher
+#### Publisher
 
 Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](https://www.ampproject.org/docs/reference/components/amp-auto-ads) for future.
 
@@ -94,7 +98,7 @@ Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](h
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 ```
 
-## Social networks & connections
+#### Social networks & connections
 
 ```toml
   # Social networks
