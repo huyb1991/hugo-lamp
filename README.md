@@ -17,6 +17,12 @@ $ rm -rf hugo-lamp/.git
 
 *For more information read the official [setup guide](https://gohugo.io/overview/installing/) of Hugo.*
 
+## Guides
+
+[Content Editing](/docs/content-editing.md)
+
+[Configuration](/docs/configuration.md)
+
 ## Contributing
 
 If you found a bug or got an idea for a new feature feel free to add a new [issues](https://github.com/huyb1991/hugo-lamp/issues).

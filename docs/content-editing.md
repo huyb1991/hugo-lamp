@@ -1,4 +1,4 @@
-# Guide
+# Guides
 
 ## Add image to article (content)
 

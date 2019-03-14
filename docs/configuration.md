@@ -3,6 +3,7 @@
 Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/master/exampleSite) at `config.toml` and update by your own:
 
 ## Site Info
+
 ```toml
 # Base config for your site
 baseURL = "http://localhost:1313/"      # Your domain
@@ -13,6 +14,7 @@ googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
 ```
 
 ## Main Menu
+
 ```toml
 [[menu.main]]
   name = "Hugo"
@@ -32,6 +34,7 @@ googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
 ```
 
 ## Taxonomies
+
 For more details, take a look on official document for [taxonomies](https://gohugo.io/content-management/taxonomies/)
 
 ```toml
@@ -41,6 +44,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
 ```
 
 ## SEO
+
 ```toml
 [params]
   subtitle = "Light responsive AMP theme"
@@ -56,6 +60,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
 ```
 
 ## Publisher
+
 Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](https://www.ampproject.org/docs/reference/components/amp-auto-ads) for future.
 
 ```toml
@@ -66,6 +71,7 @@ Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](h
 ```
 
 ## Social networks & connections
+
 ```toml
   # Social networks
   email = "name@domain.com"
