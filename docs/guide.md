@@ -2,7 +2,7 @@
 
 ## Content Editing
 
-#### Add image to article (content)
+#### Add image to article
 
 This is an AMP page, to add image, you have to use [amp-img shortcodes](https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html), the syntax is:
 ```
@@ -26,7 +26,7 @@ The `title` is the H1 tag on HTML page, and `<title>` in head section.
 
 The `description` is the meta tag for description `<meta name="description" content="">` in head section.
 
-## Configuration
+## Site Configuration
 
 Take a look at [exampleSite - config.toml](https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml), and replace config value by your own:
 
@@ -98,7 +98,7 @@ Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](h
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 ```
 
-#### Social networks & connections
+#### Social Networks & Connections
 
 ```toml
   # Social networks
