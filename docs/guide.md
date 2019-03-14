@@ -28,7 +28,7 @@ The `description` is the meta tag for description `<meta name="description" cont
 
 ## Configuration
 
-Take a look inside the [exampleSite](https://github.com/huyb1991/hugo-lamp/tree/master/exampleSite) at `config.toml` and update by your own:
+Take a look at [exampleSite - config.toml](https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml), and replace config value by your own:
 
 #### Site Info
 
