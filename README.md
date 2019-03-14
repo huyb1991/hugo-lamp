@@ -19,9 +19,8 @@ $ rm -rf hugo-lamp/.git
 
 ## Guides
 
-[Content Editing](/docs/content-editing.md)
+[Full document](/docs/guide.md)
 
-[Configuration](/docs/configuration.md)
 
 ## Contributing
 
