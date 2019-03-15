@@ -26,6 +26,30 @@ The `title` is the H1 tag on HTML page, and `<title>` in head section.
 
 The `description` is the meta tag for description `<meta name="description" content="">` in head section.
 
+#### Add icon
+
+I changed from icon font to SVG for website follow [SVG symbol a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/). Here's steps to add SVG icon to website.
+
+1. Get SVG code (Eg: https://iconsvg.xyz/)
+```
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;" preserveAspectRatio="xMidYMid meet">
+  <symbol id="icon-rss" viewBox="0 0 24 24">
+    <title>RSS</title>
+    <path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z" />
+  </symbol>
+</svg>
+```
+Replace `SVG symbol id` by yourself (above is `icon-rss`)
+
+2. Add this code into (layouts/partials/svg-icons.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/svg-icons.html]
+
+3. Call icon name by `SVG symbol id` at you define above follow this syntax:
+```html
+<svg fill="currentColor"><use xlink:href="#icon-rss" /></svg>
+```
+
+Example for icon on (layouts/partials/social.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html]
+
 ## Site Configuration
 
 Take a look at [exampleSite - config.toml](https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml), and replace config value by your own:
