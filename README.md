@@ -19,9 +19,19 @@ $ rm -rf hugo-lamp/.git
 
 ## Guides
 
-[Content Editing](/docs/content-editing.md)
+#### Content Editing
+  - [Add image to article](/docs/guide.md#add-image-to-article-content)
+  - [Content config for SEO](/docs/guide.md#content-config-for-seo)
+  - [Add icon](/docs/guide.md#add-icon)
+  - [Customize Theme](/docs/guide.md#customize-theme)
 
-[Configuration](/docs/configuration.md)
+#### Site Configuration
+  - [Site Info](/docs/guide.md#site-info)
+  - [Main Menu](/docs/guide.md#main-menu)
+  - [Taxonomies](/docs/guide.md#taxonomies)
+  - [SEO](/docs/guide.md#seo)
+  - [Publisher](/docs/guide.md#publisher)
+  - [Social Networks & Connections](/docs/guide.md#social-networks--connections)
 
 ## Contributing
 
