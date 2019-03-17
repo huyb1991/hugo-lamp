@@ -2,7 +2,7 @@
 
 ## Content Editing
 
-#### Add image to article
+### Add image to article
 
 This is an AMP page, to add image, you have to use [amp-img shortcodes](https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html), the syntax is:
 ```
@@ -12,7 +12,7 @@ Replace `width-value`, `height-value`, `image alt` and `image-url` by your image
 
 Note: Hugo is static-site-generator, to add image to your site, please follow this solution [[SOlved] How to… insert image in my post?](https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473)
 
-#### Content config for SEO
+### Content config for SEO
 
 In Front Matter section for each post, you should add `title` and `description` for SEO, example:
 
@@ -26,7 +26,7 @@ The `title` is the H1 tag on HTML page, and `<title>` in head section.
 
 The `description` is the meta tag for description `<meta name="description" content="">` in head section.
 
-#### Add icon
+### Add icon
 
 I changed from icon font to SVG for website follow [SVG symbol a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/). Here's steps to add SVG icon to website.
 
@@ -50,7 +50,7 @@ Replace `SVG symbol id` by yourself (above is `icon-rss`)
 
 Example for icon on (layouts/partials/social.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html]
 
-#### Customize Theme
+### Customize Theme
 
 Use [yarn](https://yarnpkg.com/en/) to install and run script instead of `npm`, some people got problem when using `npm` (but not with `yarn`)
 
@@ -62,7 +62,7 @@ Use [yarn](https://yarnpkg.com/en/) to install and run script instead of `npm`, 
 
 Take a look at [exampleSite - config.toml](https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml), and replace config value by your own:
 
-#### Site Info
+### Site Info
 
 ```toml
 # Base config for your site
@@ -73,7 +73,7 @@ theme = "hugo-lamp"
 googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
 ```
 
-#### Main Menu
+### Main Menu
 
 ```toml
 [[menu.main]]
@@ -93,7 +93,7 @@ googleAnalytics = "UA-XXXXXXXX-X"       # Google Analytics UA number
   url = "/tags/"
 ```
 
-#### Taxonomies
+### Taxonomies
 
 For more details, take a look on official document for [taxonomies](https://gohugo.io/content-management/taxonomies/)
 
@@ -103,7 +103,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
   category = "categories"
 ```
 
-#### SEO
+### SEO
 
 ```toml
 [params]
@@ -119,7 +119,7 @@ For more details, take a look on official document for [taxonomies](https://gohu
   msValidate = "bing_site_verification_code"                  # Bing Webmaster
 ```
 
-#### Publisher
+### Publisher
 
 Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](https://www.ampproject.org/docs/reference/components/amp-auto-ads) for future.
 
@@ -130,7 +130,7 @@ Currently only support Google Adsense as usual, maybe implement [amp-auto-ads](h
   adsenseSlotSticky = "XXX"             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
 ```
 
-#### Social Networks & Connections
+### Social Networks & Connections
 
 ```toml
   # Social networks
