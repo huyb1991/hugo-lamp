@@ -50,6 +50,14 @@ Replace `SVG symbol id` by yourself (above is `icon-rss`)
 
 Example for icon on (layouts/partials/social.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html]
 
+#### Customize Theme
+
+Use [yarn](https://yarnpkg.com/en/) to install and run script instead of `npm`, some people got problem when using `npm` (but not with `yarn`)
+
+1. Install packages by `yarn install`
+2. Run watch script to hot reload your change `yarn watch`
+
+
 ## Site Configuration
 
 Take a look at [exampleSite - config.toml](https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml), and replace config value by your own:
