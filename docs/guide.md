@@ -41,14 +41,14 @@ I changed from icon font to SVG for website follow [SVG symbol a Good Choice for
 ```
 Replace `SVG symbol id` by yourself (above is `icon-rss`)
 
-2. Add this code into (layouts/partials/svg-icons.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/svg-icons.html]
+2. Add this code into [layouts/partials/svg-icons.html](https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/svg-icons.html)
 
 3. Call icon name by `SVG symbol id` at you define above follow this syntax:
 ```html
 <svg fill="currentColor"><use xlink:href="#icon-rss" /></svg>
 ```
 
-Example for icon on (layouts/partials/social.html)[https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html]
+Example for icon on [layouts/partials/social.html](https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html)
 
 ### Customize Theme
 
