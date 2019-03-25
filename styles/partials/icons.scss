@@ -26,6 +26,10 @@
 
   &-twitter {
     background-color: $color-twitter;
+
+    &-icon {
+      margin: 5px 0 0 1px;
+    }
   }
 
   &-facebook {
