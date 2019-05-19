@@ -26,7 +26,9 @@
   </head>
   <body>
     {{ partial "svg-icons.html" . }}
+    {{ partial "header.html" . }}
     {{ partial "sidebar.html" . }}
     {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
   </body>
 </html>
