@@ -71,6 +71,14 @@
   </li>
   {{ end }}
 
+  {{ if isset .Site.Params "reddit" }}
+  <li class="social-item">
+    <a href="//reddit.com/user/{{ .Site.Params.reddit }}" title="Reddit">
+      <svg class="icon" fill="currentColor"><use xlink:href="#icon-reddit" /></svg>
+    </a>
+  </li>
+  {{ end }}
+
   <li class="social-item">
     <a href="/index.xml" title="RSS">
       <svg class="icon" fill="currentColor"><use xlink:href="#icon-rss" /></svg>

@@ -31,6 +31,7 @@ googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
   instagram = "instagram_username"
   youtube = "youtube_username"
   dribbble = "dribbble_username"
+  reddit = "reddit_username"
 
 [taxonomies]
   tag = "tags"
