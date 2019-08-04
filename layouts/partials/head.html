@@ -37,8 +37,10 @@
 
 {{ end }}
 
-<!-- Site Generator -->
-<meta name="generator" content="Hugo {{ .Hugo.Version }}">
+<!-- Hugo info -->
+{{ printf "<!--Hugo Build Date: %s-->" hugo.BuildDate | safeHTML }}
+{{ printf "<!--Hugo Commit Hash: %s-->" hugo.CommitHash | safeHTML }}
+{{ hugo.Generator }}
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}">
