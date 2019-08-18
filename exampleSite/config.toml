@@ -5,6 +5,7 @@ theme = "hugo-lamp"
 googleAnalytics = "UA-XXX-X"          # Google Analytics UA number
 
 [params]
+  mainSections = ["posts"]
   subtitle = "Light responsive AMP theme"
   author = "Huy Nguyen"
   logo = "/img/avatar.jpg"
