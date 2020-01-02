@@ -30,7 +30,7 @@ The `description` is the meta tag for description `<meta name="description" cont
 
 I changed from icon font to SVG for website follow [SVG symbol a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/). Here's steps to add SVG icon to website.
 
-1. Get SVG code (Eg: https://icomoon.io/app/ or https://simpleicons.org/)
+1. Get SVG code (Eg: https://orioniconlibrary.com/all-icons or https://icomoon.io/app/ or https://simpleicons.org/)
 ```
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" preserveAspectRatio="xMidYMid meet">
   <symbol id="icon-rss" viewBox="0 0 24 24">
