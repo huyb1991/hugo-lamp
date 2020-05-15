@@ -19,12 +19,7 @@
   <!-- Sidebar is header on desktop -->
   <nav class="menu">
     <ul class="menu-list">
-      {{ $type := .Type }}
-      {{ $kind := .Kind }}
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-        <li class="menu-item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} is-active{{ end }}{{ if and (eq .Identifier "home") (eq $type "post") }} is-active{{ end }}{{ if and (eq .Identifier "home") (and (eq $type "page") (eq $kind "taxonomy"))}} is-active{{ end }}"><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
+      {{ partial "navigation.html" . }}
     </ul>
   </nav>
 
