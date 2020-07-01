@@ -4,7 +4,7 @@ body {
   line-height: 1.618;
   font-family: $family-sans-serif;
   color: $text;
-  background: $main-background;
+  background-color: var(--main-bg-color);
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch; // Smoothly on mobile browser
 }
