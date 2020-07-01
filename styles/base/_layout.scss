@@ -3,14 +3,13 @@
   grid-gap: $space-normal;
   min-height: 100vh;
 
-  // @media screen and (max-width: $phone) {
-  //   grid-template-rows: $header-height 1fr auto $footer-height;
-  //   grid-template-areas:
-  //     "header"
-  //     "main"
-  //     "sidebar"
-  //     "footer";
-  // }
+  @media screen and (max-width: $phone) {
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
 
   @media screen and (min-width: $phone) {
     grid-template-columns: 320px 1fr;
@@ -31,12 +30,4 @@
 
 .footer {
   grid-area: footer;
-}
-
-.content {
-  grid-area: content;
-}
-
-.sidebar {
-  grid-area: sidebar;
 }
