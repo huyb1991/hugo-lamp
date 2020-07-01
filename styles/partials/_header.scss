@@ -151,13 +151,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-
-    @media screen and (min-width: $tablet) {
-      position: absolute;
-      bottom: 10px;
-      left: 0;
-      right: 0;
-    }
   }
 
   &-item {
