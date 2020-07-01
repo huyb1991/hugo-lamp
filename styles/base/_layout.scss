@@ -1,0 +1,33 @@
+.wrapper {
+  display: grid;
+  grid-gap: $space-normal;
+  min-height: 100vh;
+
+  @media screen and (max-width: $phone) {
+    grid-template-rows: 100px 1fr 90px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  @media screen and (min-width: $phone) {
+    grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr 90px;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}

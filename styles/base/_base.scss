@@ -4,7 +4,7 @@ body {
   line-height: 1.618;
   font-family: $family-sans-serif;
   color: $text;
-  background: $white;
+  background-color: var(--main-bg-color);
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch; // Smoothly on mobile browser
 }
@@ -31,26 +31,12 @@ button:hover {
 }
 
 .main {
-  margin-left: 20rem;
   padding: 1rem 2rem;
-  max-width: 100%;
-  min-height: 100vh;
   box-sizing: border-box;
-
-  @media screen and (max-width: $widescreen) {
-    width: calc(100% - 20rem);
-  }
-
-  @media (min-width: $tablet) and (max-width: $desktop) {
-    margin-left: 15rem;
-    width: calc(100% - 15rem);
-  }
 
   @media screen and (max-width: $tablet) {
     margin-left: 0;
     padding: 0 1rem 1rem;
-    width: 100%;
-    min-height: initial;
     border-left: none;
     border-right: none;
     border-top: 1px solid $border-color;
@@ -59,13 +45,9 @@ button:hover {
 }
 
 .footer {
-  display: none;
-
-  @media screen and (max-width: $tablet) {
-    display: block;
-    padding: 1rem;
-    font-size: $size-7;
-    text-align: center;
-    font-family: $family-monospace;
-  }
+  display: block;
+  padding: 1rem;
+  font-size: $size-7;
+  text-align: center;
+  font-family: $family-monospace;
 }
