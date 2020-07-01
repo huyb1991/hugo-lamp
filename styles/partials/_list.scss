@@ -1,8 +1,6 @@
 // Style for list template
 .entry {
   &-list {
-    background-color: $main-background;
-
     @media screen and (max-width: $tablet) {
       padding-top: $space-large;
     }
