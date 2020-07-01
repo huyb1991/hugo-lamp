@@ -1,6 +1,7 @@
 .wrapper {
   display: grid;
   grid-gap: $space-normal;
+  min-height: 100vh;
 
   // @media screen and (max-width: $phone) {
   //   grid-template-rows: $header-height 1fr auto $footer-height;
@@ -13,6 +14,7 @@
 
   @media screen and (min-width: $phone) {
     grid-template-columns: 320px 1fr;
+    grid-template-rows: 1fr 90px;
     grid-template-areas:
       "header main"
       "header footer";
