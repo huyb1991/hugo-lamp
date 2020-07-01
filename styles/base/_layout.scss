@@ -1,0 +1,40 @@
+.wrapper {
+  display: grid;
+  grid-gap: $space-normal;
+
+  // @media screen and (max-width: $phone) {
+  //   grid-template-rows: $header-height 1fr auto $footer-height;
+  //   grid-template-areas:
+  //     "header"
+  //     "main"
+  //     "sidebar"
+  //     "footer";
+  // }
+
+  @media screen and (min-width: $phone) {
+    grid-template-columns: 320px 1fr;
+    grid-template-areas:
+      "header main"
+      "header footer";
+  }
+}
+
+.header {
+  grid-area: main;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
