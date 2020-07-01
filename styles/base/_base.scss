@@ -4,7 +4,7 @@ body {
   line-height: 1.618;
   font-family: $family-sans-serif;
   color: $text;
-  background: $white;
+  background: $main-background;
   text-rendering: optimizeLegibility;
   -webkit-overflow-scrolling: touch; // Smoothly on mobile browser
 }
@@ -59,13 +59,9 @@ button:hover {
 }
 
 .footer {
-  // display: none;
-
-  @media screen and (max-width: $tablet) {
-    display: block;
-    padding: 1rem;
-    font-size: $size-7;
-    text-align: center;
-    font-family: $family-monospace;
-  }
+  display: block;
+  padding: 1rem;
+  font-size: $size-7;
+  text-align: center;
+  font-family: $family-monospace;
 }
