@@ -1,7 +1,21 @@
 :root {
   --main-bg-color: $main-background;
+
+  .sunny {
+    display: none;
+  }
+  .moon {
+    display: block;
+  }
 }
 
 .dark-mode:root {
   --main-bg-color: black;
+
+  .sunny {
+    display: block;
+  }
+  .moon {
+    display: none;
+  }
 }
