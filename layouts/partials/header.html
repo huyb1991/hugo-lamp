@@ -23,11 +23,9 @@
     </ul>
   </nav>
 
-  <button
-    [text]="darkMode ? 'Light Mode' : 'Dark Mode'"
-    on="tap:AMP.setState({darkMode: !darkMode})"
-  >
-    Dark Mode
+  <button on="tap:AMP.setState({darkMode: !darkMode})">
+    <svg class="icon moon" fill="currentColor"><use xlink:href="#icon-moon" /></svg>
+    <svg class="icon sunny" fill="currentColor"><use xlink:href="#icon-sunny" /></svg>
   </button>
 
   {{ partial "social.html" . }}
