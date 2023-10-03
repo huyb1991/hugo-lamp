@@ -34,7 +34,7 @@
     "cssnano": "^4.1.10",
     "node-sass": "^7.0.0",
     "nodemon": "^2.0.4",
-    "postcss": "^7.0.36"
+    "postcss": "^8.4.31"
   },
   "dependencies": {}
 }
